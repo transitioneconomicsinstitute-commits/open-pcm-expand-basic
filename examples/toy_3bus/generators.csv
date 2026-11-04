@@ -1,0 +1,3 @@
+name,node,type,mw,heat_rate,fuel_usd_mmbtu,vom,profile
+Old coal,1,thermal,450,10.0,3.0,4,
+Old peaker,2,thermal,250,11.5,8.0,6,

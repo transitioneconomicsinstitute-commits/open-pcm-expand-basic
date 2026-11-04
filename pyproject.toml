@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "open-pcm-expand-basic"
+version = "0.1.0"
+description = "Basic least-cost generation and transmission expansion built on OPEN-PCM"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Transition Economics Institute"}]
+requires-python = ">=3.9"
+dependencies = ["open-pcm @ git+https://github.com/transitioneconomicsinstitute-commits/open-pcm.git@main", "numpy", "pandas"]
+[project.optional-dependencies]
+test = ["pytest"]
+[project.scripts]
+open-pcm-expand-basic = "open_pcm_expand_basic.__main__:main"
+[tool.setuptools]
+packages = ["open_pcm_expand_basic"]
